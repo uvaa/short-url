@@ -4,6 +4,8 @@ the core are [hashids](https://hashids.org/) and [go-hashids](https://github.com
 
 # Deployment
 
+### https://hub.docker.com/r/uvaa/short-url
+
 Docker deployment is recommended, the simple command:
 
     docker run -d -p 8080:80 -v /data:/app/data -e origin=https://abcd.com uvaa/short-url
