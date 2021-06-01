@@ -17,7 +17,7 @@ func init() {
 	}
 
 	var err error
-	db, err = gorm.Open(sqlite.Open("./data/url.db"), &gorm.Config{})
+	db, err = gorm.Open(sqlite.Open("./data/url.db?_sync=0"), &gorm.Config{})
 	if err != nil {
 		panic(err)
 	}
